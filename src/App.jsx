@@ -65,7 +65,7 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
                 return <Task task = {task} key = {index} delete = {handleDelete} complete = {handleComplete}/>//custom component that takes in the task and displays it; passes in all functions as well as values
               })
             }
-            <footer><h3>Completed Tasks: <span style = {{color: 'green'}}>{completedTasks}</span></h3></footer>{/*Footer that has state of completed tasks which updates in task.java*/}
+            <footer className = 'flexbox column center'><h3>Completed Tasks: <span style = {{color: 'green'}}>{completedTasks}</span></h3><button href = 'https://docs.google.com/presentation/d/1IOKMgyK5e9dWAdgxa0mcnN57eh7Li-Kdm5D-mzUBM9A/view' target = '_blank' className = "buttonSlides">Link to slides</button></footer>{/*Footer that has state of completed tasks which updates in task.java*/}
           </div>
       </div>
     </div>

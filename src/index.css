@@ -92,3 +92,18 @@ code {
   cursor: pointer;
 }
 
+
+.buttonSlides{
+  border: 4px solid dodgerblue;
+  background-color: white;
+  width: 6vw;
+  height: 5vh;
+  border-radius: 10px;
+  font-size: 1.25vw;
+  transition: 0.25s;
+}
+
+.buttonSlides:hover{
+  background-color: dodgerblue;
+  color: white;
+}
