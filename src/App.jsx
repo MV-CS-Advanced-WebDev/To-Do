@@ -65,7 +65,7 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
                   <button onClick = {handleAdd}>Create</button>{/*Button to add the task*/}
                 </div>
             </div>
-            <br />
+            <br /> 
             {
               taskArray.map((task, index)=>{ /*This is the map function that takes in the taskArray and maps it to the task*/
                 return <Task task = {task} key = {index} delete = {handleDelete} complete = {handleComplete}/>//custom component that takes in the task and displays it; passes in all functions as well as values
