@@ -53,7 +53,7 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
 
     */
     <>
-      <GithubCorner direction = 'left' onClick = {()=>window.open('https://github.com/MV-CS-Advanced-WebDev/To-Do', '_blank')} />
+      <GithubCorner direction = 'left' href = 'https://mv-cs-advanced-webdev.github.io/To-Do/' onClick = {()=>window.open('https://github.com/MV-CS-Advanced-WebDev/To-Do', '_blank')} />
 
     <div className= 'container flexbox column center'> {/* This is the overall grey container*/}
       <div className = 'todoListBody flexbox column'> {/* This is the overall white container*/}
