@@ -1,5 +1,5 @@
 
-import Task from './components/Task.jsx' //importing the task component
+import Task from './components/task/Task.jsx' //importing the task component
 
 import {useState} from 'react'//react 'hook' to help us manage state on the webpage
 
