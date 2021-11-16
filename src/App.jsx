@@ -3,6 +3,9 @@ import Task from './components/Task.jsx' //importing the task component
 
 import {useState} from 'react'//react 'hook' to help us manage state on the webpage
 
+import GithubCorner from "react-github-corner";
+
+
 const App = ()=> { //javascrpt function to handle the app of the whole page
 
 
@@ -31,6 +34,7 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
   }
 
   return (
+   
     //this is jsx; inside the html javascirpt can be used if covered by a {} task
 
 
@@ -48,8 +52,10 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
       this is much better than setting an id to the h1 and using innerHTML = 'Hello World'
 
     */
+    <>
+      <GithubCorner direction = 'left' onClick = {()=>window.open('https://github.com/MV-CS-Advanced-WebDev/To-Do', '_blank')} />
 
-    <div className='container flexbox column center'> {/* This is the overall grey container*/}
+    <div className= 'container flexbox column center'> {/* This is the overall grey container*/}
       <div className = 'todoListBody flexbox column'> {/* This is the overall white container*/}
           <h1>To Do List</h1>{/*Title*/}
           <div className = 'flexbox column center'>
@@ -65,10 +71,11 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
                 return <Task task = {task} key = {index} delete = {handleDelete} complete = {handleComplete}/>//custom component that takes in the task and displays it; passes in all functions as well as values
               })
             }
-            <footer className = 'flexbox column center'><h3>Completed Tasks: <span style = {{color: 'green'}}>{completedTasks}</span></h3><button href = 'https://docs.google.com/presentation/d/1IOKMgyK5e9dWAdgxa0mcnN57eh7Li-Kdm5D-mzUBM9A/view' target = '_blank' className = "buttonSlides">Link to slides</button></footer>{/*Footer that has state of completed tasks which updates in task.java*/}
+            <footer className = 'flexbox column center'><h3>Completed Tasks: <span style = {{color: 'green'}}>{completedTasks}</span></h3><button className = "buttonSlides" onClick = {()=>window.open('https://docs.google.com/presentation/d/1IOKMgyK5e9dWAdgxa0mcnN57eh7Li-Kdm5D-mzUBM9A/view', '_blank')}>Link to slides</button></footer>{/*Footer that has state of completed tasks which updates in task.java*/}
           </div>
       </div>
     </div>
+    </>
   )
 }
 
