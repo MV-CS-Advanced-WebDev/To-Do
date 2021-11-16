@@ -1,3 +1,5 @@
+/*This css file does all the css. Feel free to make seperate ones but this one is by defualt importted after running create-react-app to the index.js file*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgrey;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.todoListBody{
+  width: 45vw;
+  height: 90vh;
+  overflow: auto;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.todoListBody h1{
+  text-align: center;
+  color: green;
+  font-size: 4.5vw;
+}
+
+
+.todoListBody input{
+  border:none;
+  border-bottom: 3px solid black !important;
+  width: 20vw;
+  height: 5vh;
+  margin: 0 1vw;
+  font-size: 1.25vw;
+}
+
+.todoListBody button{
+  border: 4px solid green;
+  background-color: white;
+  width: 6vw;
+  height: 5vh;
+  border-radius: 10px;
+  font-size: 1.25vw;
+  transition: 0.25s;
+}
+
+.todoListBody button:hover{
+  background-color: green;
+  color: white;
+}
+
+.todoListBody input:focus{
+  outline: none;
+  border-bottom: 3px solid green !important;
+}
+
+.taskContainer{
+  width: 30vw;
+  height: 10vh;
+  border-radius: 25px;
+  background-color:lightgrey;
+}
+
+.icon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0.5vw;
+  cursor: pointer;
+}
+
