@@ -5,7 +5,7 @@ import {useState} from 'react'//react 'hook' to help us manage state on the webp
 
 import GithubCorner from "react-github-corner";
 
-import './home.css'
+import './home.css' 
 
 
 const Home = ()=> { //javascrpt function to handle the app of the whole page
@@ -16,7 +16,7 @@ const Home = ()=> { //javascrpt function to handle the app of the whole page
   const [currentTask, setCurrentTask] = useState('')//setting state of current task thats in the input feild
   const [taskArray, seTaskArray] = useState([])//setting state of taskArray to an empty array
   const [completedTasks, setCompletedTasks] = useState(0)//setting state of completedTasks to an empty array
-
+  
   const handleAdd = () => {//javascrpt function to handle the add tasks
     if(currentTask !== ''){
       seTaskArray([...taskArray, currentTask]) //sets the state of the task array to have all the previous array items and the new task 
