@@ -1,0 +1,17 @@
+.taskContainer{
+    width: 30vw;
+    height: 10vh;
+    border-radius: 25px;
+    background-color: lightgrey;
+    margin: 1vh 0;
+  }
+  
+  .icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0.5vw;
+    cursor: pointer;
+  }
+  
+  
