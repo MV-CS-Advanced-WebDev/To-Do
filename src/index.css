@@ -9,13 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: lightgrey;
 }
-a{
-  color: dodgerblue;
-  text-decoration: none;
-}
-a:hover{
-  color: white;
-}
+
 .container{
   width: 100vw;
   height: 100vh;
@@ -37,64 +31,4 @@ a:hover{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-
-.todoListBody{
-  width: 45vw;
-  height: 90vh;
-  overflow: auto;
-  background-color: white;
-  border-radius: 50px;
-}
-
-.todoListBody h1{
-  text-align: center;
-  color: green;
-  font-size: 4.5vw;
-}
-
-
-.todoListBody input{
-  border:none;
-  border-bottom: 3px solid black !important;
-  width: 20vw;
-  height: 5vh;
-  margin: 0 1vw;
-  font-size: 1.25vw;
-}
-
-.todoListBody button{
-  border: 4px solid green;
-  background-color: white;
-  width: 6vw;
-  height: 5vh;
-  border-radius: 10px;
-  font-size: 1.25vw;
-  transition: 0.25s;
-}
-
-.todoListBody button:hover{
-  background-color: green;
-  color: white;
-}
-
-.todoListBody input:focus{
-  outline: none;
-  border-bottom: 3px solid green !important;
-}
-
-.buttonSlides{
-  border: 4px solid dodgerblue !important;
-  background-color: white;
-  width: 10vw !important;
-  height: 5vh;
-  border-radius: 10px;
-  font-size: 1vw;
-  transition: 0.25s;
-}
-
-.buttonSlides:hover{
-  background-color: dodgerblue !important;
-  color: white !important;
 }
