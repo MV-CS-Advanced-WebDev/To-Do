@@ -60,10 +60,10 @@ const Home = ()=> { //javascrpt function to handle the app of the whole page
     <div className= 'container flexbox column center'> {/* This is the overall grey container*/}
       <div className = 'todoListBody flexbox column'> {/* This is the overall white container*/}
           <h1>To Do List</h1>{/*Title*/}
-          <div className = 'flexbox column center'>
+          <div className = 'flexbox column center' style={{overflow: 'scoll'}}>
             <div className = 'flexbox column center'> {/* This is the overall adding form input*/}
                 <div>
-                  <input value = {currentTask} type='text' onChange = {(e)=>setCurrentTask(e.target.value)}placeholder='Add a task' />{/*Form to take in inputs. onChange function runs every tim teh input feild is changed*/}
+                  <input value = {currentTask} type='text' onChange = {(e)=>setCurrentTask(e.target.value)} placeholder='Add a task' />{/*Form to take in inputs. onChange function runs every tim teh input feild is changed*/}
                   <button onClick = {handleAdd}>Create</button>{/*Button to add the task*/}
                 </div>
             </div>
@@ -74,9 +74,9 @@ const Home = ()=> { //javascrpt function to handle the app of the whole page
               })
             }
             <footer className = 'flexbox column center'>
-				<h3>Completed Tasks: <span style = {{color: 'green'}}>{completedTasks}</span></h3>
-				<button className = "buttonSlides" onClick = {()=>window.open('https://docs.google.com/presentation/d/1IOKMgyK5e9dWAdgxa0mcnN57eh7Li-Kdm5D-mzUBM9A/view', '_blank')}>Link to slides</button>
-			</footer>{/*Footer that has state of completed tasks which updates in task.java*/}
+              <h3>Completed Tasks: <span style = {{color: 'green'}}>{completedTasks}</span></h3>
+              <button className = "buttonSlides" onClick = {()=>window.open('https://docs.google.com/presentation/d/1IOKMgyK5e9dWAdgxa0mcnN57eh7Li-Kdm5D-mzUBM9A/view', '_blank')}>Link to slides</button>
+			      </footer>{/*Footer that has state of completed tasks which updates in task.java*/}
           </div>
       </div>
     </div>

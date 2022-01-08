@@ -4,7 +4,7 @@ const App = ()=> { //javascrpt function to handle the app of the whole page
 
   return (
    
-    //this is jsx; inside the html javascirpt can be used if covered by a {} task
+    //this is jsx; inside the html javascript can be used if covered by a {} task
 
 
     /* For example if I want to use show static javascript expression inside an h1 I would:
